@@ -1,0 +1,87 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Facebook
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p created by  Mark Zuckerberg 
+         
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Features
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;News Feed
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Likes and Reactions
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Comments
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp; Messages and inbox
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Notifications
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          //- .panel.panel-primary
+          //-   .panel-heading
+          //-     h2.panel-title Install
+          //-   .panel-body
+          //-     <iframe src = "https://about.meta.com/?utm_source=about.facebook.com&utm_medium=redirect" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new')     Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Simon Holmes
+                    small.reviewTimestamp 16 July 2013
+                  .col-xs-12
+                    p Great app to interact with friends.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Charlie Chaplin
+                    small.reviewTimestamp 16 June 2013
+                  .col-xs-12
+                    p App can be still improved in terms of usability.
+    .col-xs-12.col-md-3
+      p.lead
+        |Facebook can be accessed from devices such as computers and smartphones. You can post text, photos and multimedia which are shared with any other users. Users can also communicate directly with each other with Messenger, join common-interest groups, and receive notifications on the activities of their Facebook friends and the pages they follow.
+      p
+        | If you've been and you like it - or if you don't - please leave a review to help other people just like you.
